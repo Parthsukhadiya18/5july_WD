@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-index</title>
+    <style>
+        img{
+            height: 200px;
+            width: 200px;
+        }
+        .reletive{
+            position: relative;
+        }
+        .img1{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            z-index: 4;
+        }
+        .img2{
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            z-index: 2;
+        }
+        .img3{
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            z-index: 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="reletive">
+        <img src="https://images.pexels.com/photos/17490386/pexels-photo-17490386/free-photo-of-a-portrait-of-a-woman-in-sunlight.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="" class="img1">
+        <img src="https://images.pexels.com/photos/6640696/pexels-photo-6640696.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt=""  class="img2">
+
+        <img src="https://images.pexels.com/photos/15577641/pexels-photo-15577641/free-photo-of-sky-sunset-sunny-fashion.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt=""  class="img3">
+
+    </div>
+</body>
+</html>

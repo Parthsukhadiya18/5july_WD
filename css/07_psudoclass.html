@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <style>
+       .inline{
+            list-style: none;
+        border: 1px solid red;
+
+        }
+        .inline li{
+          display: inline;
+        border: 1px solid green;
+
+
+        }
+        .inline a{
+            text-decoration: none;
+        border: 1px solid yellow;
+
+        }
+        a:link{
+            color: red;
+        }
+        a:visited{
+            color: green;
+        }
+        a:hover{
+            font-size: 30px;
+        }
+        /* psudoElement */
+
+       p::first-letter{
+        color: red;
+       }
+       p::first-line{
+        color: green;
+       }
+       p::before{
+        content:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPjhCyUijzK271WSKkd5NvJCJvwQgvCZlEKQ&usqp=CAU);
+       }
+       p::after{
+        content:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPjhCyUijzK271WSKkd5NvJCJvwQgvCZlEKQ&usqp=CAU);
+
+       }
+       ::marker{
+        color: red;
+       }
+       ::selection{
+        color: red;
+        font-size: 30px
+       }
+    </style>
+</head>
+<body>
+    <ul class="inline">
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Servies</a></li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero molestias expedita perferendis, dignissimos aspernatur praesentium nostrum qui, ullam temporibus eius aliquid accusantium saepe ipsam, aperiam eum error explicabo culpa molestiae ut? Autem neque nulla, labore nisi voluptate dolore nesciunt aliquam eaque quaerat maiores alias corporis dicta aliquid repudiandae vero laborum quibusdam nihil. Qui beatae nihil exercitationem tenetur eos! Enim obcaecati, sequi voluptatem reiciendis porro a voluptas impedit provident eveniet, totam hic dicta ipsa ad cupiditate, tempora nemo unde quas fugit. Tenetur illo deleniti dolorum qui fugit beatae dicta exercitationem facilis sint sed, odio nesciunt quae odit vero fugiat non ex.</p>
+    <ul>
+        <li>
+            Parth
+        </li>
+        <li>
+            Parth
+        </li>
+        <li>
+            Parth
+        </li>
+    </ul>
+
+</body>
+</html>

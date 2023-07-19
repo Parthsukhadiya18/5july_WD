@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .parth {
+            display: grid;
+            /* grid-template-columns:1fr 1fr 1fr ; */
+            /* grid-template-columns:auto  auto auto ; */
+            grid-template-columns:repeat(3, 1fr);
+            /* row-gap: 10px;
+            column-gap: 20px; */
+            /* gap:10px 20px; */
+            gap:10px;
+            margin:10px auto;
+
+
+
+        }
+
+        .Swara {
+            background-color: red;
+            height: 100px;
+            width: 100%;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parth">
+        <div class="Swara">1</div>
+        <div class="Swara">2</div>
+        <div class="Swara">3</div>
+        <div class="Swara">4</div>
+        <div class="Swara">5</div>
+        <div class="Swara">6</div>
+
+    </div>
+</body>
+
+</html>

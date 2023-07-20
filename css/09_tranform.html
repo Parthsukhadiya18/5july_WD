@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .roatet{
+            background-color: red;
+            height: 100px;
+            width: 100px;
+            margin-left: 150px;
+            margin-top: 100px;
+        }
+        .roatet:hover{
+            transform: rotate(50deg);
+            /* transform:rotateX(30deg); */
+            /* transform:rotateY(30deg); */
+            /* transform:rotateZ(40deg); */
+
+
+
+        }
+        .scale{
+            background-color: red;
+            height: 100px;
+            width: 100px;
+            margin-left: 150px;
+            margin-top: 100px;
+        }
+        .scale:hover{
+            /* transform: scale(2); */
+            /* transform:scaleX(2); */
+            /* transform:scaleY(2); */
+            transform:scale(2,3);
+        }
+        .skew{
+            background-color: red;
+            height: 100px;
+            width: 100px;
+            margin-left: 150px;
+            margin-top: 100px;
+        }
+        .skew:hover{
+            
+            /* transform:skew(-60deg); */
+            transform:skewY(60deg);
+
+        }
+        .translate{
+            background-color: red;
+            height: 100px;
+            width: 100px;
+            margin-left: 150px;
+            margin-top: 100px;
+        }
+        .translate:hover{
+            
+            /* transform:translate(10px); */
+            /* transform:translateY(30px); */
+            transform:rotateZ(100deg);
+
+
+
+        }
+        .matrix{
+            background-color: red;
+            height: 100px;
+            width: 100px;
+            margin-left: 150px;
+            margin-top: 100px;
+        }
+        .matrix:hover{
+            /* matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY()) */
+           transform: matrix(2,1,1,1.5,2,3);            
+        }
+    </style>
+</head>
+<body>
+     <div class="roatet"></div>  
+     <div class="scale">scale</div>  
+     <div class="skew">skew</div>  
+     <div class="translate">translate</div> 
+     <div class="matrix">matrix</div>  
+
+
+
+
+</body>
+</html>

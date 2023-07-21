@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .parth{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            transition: 2s all ease;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation-name: earth;
+            animation-duration: 2s;
+            animation-timing-function: ease;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+            animation-fill-mode:both ;
+            /* border-radius: 50%; */
+        }
+        @keyframes earth {
+            /* from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(70deg);
+
+
+            } */
+            0%{
+                transform: rotate(0deg);
+
+            }
+            50%{
+                transform: rotate(180deg);
+                background-color: green;
+
+            }
+            100%{
+                transform: rotate(360deg);
+                background-color: yellow;
+
+
+            }
+        }
+    </style>
+</head>
+<body>
+  <div class="parth">
+
+  </div>
+</body>
+</html>

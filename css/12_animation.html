@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parth {
+
+            height: 400px;
+            width: 400px;
+            position: relative;
+            margin: 100px;
+            left: 100px;
+
+        }
+
+        .p1 {
+            border-top: 3px solid black;
+            border-radius: 50%;
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            animation: earth 4s linear infinite normal both;
+
+
+        }
+
+        .p2 {
+            border-right: 3px solid black;
+            border-radius: 50%;
+
+            height: 150px;
+            width: 150px;
+            position: absolute;
+            top: 25px;
+            left: 25px;
+            animation: earth 4s linear infinite reverse both;
+
+        }
+
+        .p3 {
+            border-left: 3px solid black;
+            border-radius: 50%;
+
+            height: 100px;
+            width: 100px;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            animation: earth 4s linear infinite both;
+
+        }
+        .p4 {
+            border-bottom: 3px solid black;
+            border-radius: 50%;
+
+            height: 50px;
+            width: 50px;
+            position: absolute;
+            top: 75px;
+            left: 75px;
+            animation: earth 4s linear infinite both;
+
+        }
+
+        @keyframes earth {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parth">
+        <div class="p1"></div>
+        <div class="p2"></div>
+        <div class="p3"></div>
+        <div class="p4"></div>
+
+    </div>
+</body>
+
+</html>

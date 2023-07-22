@@ -1,5 +1,31 @@
-@media(min-width:768px){
-    body{
-        background-color: yellow;
-    }
+@media (min-width: 768px) {
+
+  
+ 
+  /* header  */
+  header .header {
+    display: flex;
+    width: 100%;
+   
+  }
+  header .header .left {
+    width: 35%;
+  }
+  header .header .left h1 {
+    font-size: 35px;
+    margin: 10px 10px 10px 20% ;
+
+  }
+  header .header .right {
+    width: 64%;
+  }
+  header .header .right ul  {
+    margin-top: 32px;
+  }
+  header .header .right ul li {
+    margin: 10px;
+  }
+  header .header .right ul li a {
+    font-size: 15px;
+  }
 }

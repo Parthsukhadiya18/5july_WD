@@ -1,5 +1,22 @@
 @media (max-width:576px){
-    body{
+    /* body{
         background-color: orangered;
-    }
+    } */
+    /* header  */
+    header .header {
+        display: flex;
+        width: 100%;
+       
+      }
+      header .header .left {
+        width: 60%;
+      }
+      header .header .left h1 {
+        font-size: 30px;
+        margin: 10px 0px 10px 0%;
+    
+      }
+  header .header .right {
+    display: none;
+  }
 }

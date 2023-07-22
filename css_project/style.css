@@ -3,6 +3,44 @@
     padding: 0px;
     box-sizing: border-box;
 }
-body{
+/* body{
     background-color: red;
+} */
+/* header  */
+header .header{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    /* border: 1px solid red; */
+    background-color: rgb(61, 132, 132);
+}
+header .header .left{
+    width: 35%;
+}
+header .header .left h1{
+    font-size: 40px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    margin: 10px 10px 10px 20% ;
+    color: whitesmoke;
+
+}
+header .header .right{
+    width: 64%;
+}
+header .header .right ul{
+    list-style: none;
+    margin-top: 37px;
+    text-align: end;
+
+}
+header .header .right ul li{
+    display: inline;
+    margin: 12px;
+
+}
+header .header .right ul li a{
+    text-decoration: none;
+    font-size: 19px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: whitesmoke;
 }

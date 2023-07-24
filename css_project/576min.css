@@ -25,4 +25,85 @@
   header .header .right ul li a {
     font-size: 13px;
   }
+  /* section1  */
+.section1{
+  position: relative;
+}
+
+.section1 .main{
+  position: absolute;
+  top: 30%;
+  left: 5%;
+}
+.section1 .main h1{
+  font-size: 35px;
+  margin-left: 1%;
+}
+.section1 .main h4{
+  font-size: 18px;
+  margin: 20px;
+}
+.section1 .main button{
+  font-size: 17px;
+  margin: 20px;
+  padding: 10px 20px;
+}
+/* .section2  */
+.section2 .what{
+  text-align: center;
+  }
+  .section2 .what h1{
+      font-size: 40px;
+      font-family:  monospace;
+      font-weight: 900;
+      margin: 50px 0px;
+  }
+  .section2 .text{
+      display: flex;
+      height: 100%;
+
+      flex-direction: column;
+      width: 100%;
+      margin-bottom: 20px;
+  }
+  .section2 .text .Integer{
+      width: 90%;
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap:30px 30px;
+      margin:0px 40px;
+  }
+  .section2 .text .Integer .container{
+      box-shadow: 10px 10px 5px wheat;
+      text-align: center;
+  }
+  .section2 .text .Integer .container i{
+      font-size: 60px;
+      margin-top: 30px;
+  
+  }
+  .section2 .text .Integer .container h1{
+      font-size: 23px;
+      margin-top: 10px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+  }
+  .section2 .text .Integer .container p{
+      font-size: 20px;
+      margin-top: 10px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      opacity: .6;
+  
+  }
+  .section2 .text .img2{
+      width: 90%;
+      margin:20px 40px 0px 40px;
+  
+  
+  }
+  .section2 .text .img2 img{
+      height: 500px;
+      width: 100%;
+  
+  }
 }

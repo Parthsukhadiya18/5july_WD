@@ -167,4 +167,65 @@ font-size: 20px;
 padding: 15px;
 margin-top: 10px;
 }
+
+/* section4  */
+
+.section4 .upper h1{
+font-size: 25px;
+margin-top: 20px;
+margin-bottom: 20px;
+}
+.section4 .lower .main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.section4 .lower .main .left {
+ 
+  width: 100%;
+  margin:20px 0px 20px 0px;
+
+}
+.section4 .lower .left h5 , .section4 .lower .right h5{
+ 
+  font-size: 18px;
+  margin: 20px 10px;
+}
+
+
+
+.section4 .lower .main .right {
+ 
+  width: 100%;
+  margin:20px 0px 20px 0px;
+
+}
+.section4 .lower .left  .text,.section4 .lower .right  .text{
+  display: flex;
+  flex-direction: unset;
+  width: 100%;
+
+}
+.section4 .lower .left  .text .img1,.section4 .lower .right  .text .img1{
+  width: 40%;
+
+}
+.section4 .lower .left  .text .img1 img,.section4 .lower .right  .text .img1 img{
+  border-radius: 50%;
+  height: 60px;
+  margin: 10px 20px;
+
+}
+.section4 .lower .left  .text .carl,.section4 .lower .right  .text .carl{
+  width: 50%;
+
+}
+.section4 .lower .left  .text .carl h4,.section4 .lower .right  .text .carl h4{
+  font-size: 18px;
+  margin: 10px 0px 0px 0px ;
+
+}
+.section4 .lower .left  .text .carl p,.section4 .lower .right  .text .carl p{
+  font-size: 12px;
+}
 }

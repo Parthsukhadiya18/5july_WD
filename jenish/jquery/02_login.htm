@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+    <style>
+        #page {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            text-shadow: 5px 5px 10px white;
+            text-align: left;
+
+        }
+
+        span {
+            color: red;
+        }
+
+        body {
+            background-color: rgb(23, 190, 245);
+        }
+
+        form {
+            background-color: rgb(206, 206, 223);
+            height: 300px;
+            width: 300px;
+            border: 2px solid blue;
+            border-radius: 10px;
+            margin-left: 37%;
+            margin-top: 8%;
+        }
+
+        label {
+            padding: 50px;
+        }
+
+        input {
+            margin: 20px 50px;
+            border-radius: 5px;
+            height: 20px;
+
+
+        }
+
+        .btn {
+            height: 40px;
+            width: 100px;
+            border-radius: 20px;
+            background-color: rgb(23, 8, 238);
+            margin-left: 20%;
+            color: rgb(253, 248, 250);
+            font-weight: bold;
+
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+</head>
+
+<body>
+    <div id="page">
+        <h4 class="toggle">Login</h4>
+        <h4 class="slide">Login-slidetoggle</h4>
+        <h4 class="fade">Login-fadetoggle</h4>
+
+
+
+        <form method="post" id="form" action="02_css.html">
+
+            <label for="email">Email<span>*</span></label><br>
+            <input type="email" name="" id="email" required placeholder="Enter Email" /><br />
+            <span id="p1"></span><br />
+            <label for="password">Password<span>*</span></label><br>
+            <input type="password" name="" id="password" required placeholder="Enter Password" /><br />
+            <span id="p2"></span><br />
+
+            <button type="submit" value="" class="btn" onclick="sub()">Submit</button>
+        </form>
+    </div>
+    <script>
+        function sub() {
+            let email = document.querySelector("#email").value;
+            let pass = document.querySelector("#password").value;
+
+            if (email == "") {
+                document.querySelector("#p1").innerHTML = "enter email";
+                return false;
+            }
+            if (pass == "") {
+                document.querySelector("#p2").innerHTML = "enter password";
+                return false;
+
+            }
+        }
+        $(document).ready(function () {
+            $(".toggle").click(function () {
+                // $("#form").hide(1000).show(1000);
+                $("#form").toggle();
+
+
+
+            })
+
+            $(".slide").click(function () {
+
+
+                $("form").slideToggle();
+
+            })
+            $(".fade").click(function () {
+
+                $("form").fadeToggle(1000);
+
+
+            })
+
+        })
+
+    </script>
+</body>
+
+</html>

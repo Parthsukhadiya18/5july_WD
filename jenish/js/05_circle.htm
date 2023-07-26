@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+        #circle {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: black;
+            margin: auto;
+            margin-top: 100px;
+            font-size: 100px;
+            color: antiquewhite;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="circle">
+        <div id="number">1</div>
+    </div>
+    <button onclick="clear()">stop</button>
+    <button onclick="start()">start</button>
+    <script>
+        var b = 1
+        function setint(startPoint) {
+            var i = 0
+
+            var color = ['red', 'green', 'yellow', 'pink']
+            return setInterval(() => {
+                b = startPoint++
+                if (i == 4) {
+                    i = 0
+                }
+                document.getElementById('number').innerText = b
+                document.getElementById('circle').style.backgroundColor = color[i]
+
+                i++
+            }, 1000)
+        }
+
+        var id = null
+        function start() {
+            id = setint(b)
+        }
+
+        function clear() {
+            console.log(1)
+            clearInterval(id)
+        }
+    </script>
+</body>
+
+</html>

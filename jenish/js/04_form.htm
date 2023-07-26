@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form action="#" method="post" name="myform" class="card" onsubmit="return form_valid()">
+        <div class="row m-5">
+            <div class="col-7">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" id="name" name="name" class="form-control" placeholder="enter name"  /><br /><br />
+            </div>
+            <div class="col-7">
+                <label for="gen" class="form-check-label">Gender-</label>
+                <input type="radio" class="form-check-input" id="gen" name="gen" />Male
+                <input type="radio" class="form-check-input" id="gen" name="gen" />FeMale<br /><br /> 
+            </div>
+            <div class="col-7 ">
+                <label for="quli"  class="form-check-label">Qualefication</label>
+                <input type="checkbox"  class="form-check-input" id="quli" name="c1" />10
+                <input type="checkbox"  class="form-check-input" id="quli" name="c2" />12<br /><br /> 
+            </div>
+            <div class="col-7 ">
+                <label for="city" class="form-check-label">City</label>
+                <select class="form-select" name="city" id="city">
+                    <option value="-1">---select--</option>        
+                    <option value="">Surat</option>
+                    <option value="">Baroda</option>        
+                </select><br><br>
+            </div>
+            <div class="col-7">
+              
+                <label for="mno" class="form-label">Mobile No</label>
+                <input type="number" id="mno" name="mno" class="form-control" placeholder="enter mno" /><br /><br />
+            </div>
+            <div class="col-7">
+              
+                <input type="button" onclick="form_valid()"  class="form-control btn btn-primary" value="Submit" /><br /><br />
+            </div>
+        </div>
+      
+
+     
+
+     
+
+    
+
+       
+
+
+
+       
+    </form>
+
+
+    <script>
+        function form_valid() {
+            // let name = document.querySelector("#name").value;
+
+            // text name
+            let name = document.myform.name.value;
+
+            if (name == "") {
+                alert("enter name");
+            }else if(name == "parth"){
+                alert("Hello parth");
+            } 
+            else if (!isNaN(name)) {
+                alert("enter alphabet");
+            }
+
+            // radio button
+            let male = document.myform.gen[0].checked;
+            let female = document.myform.gen[1].checked;
+
+            if (male == false && female == false) {
+                alert("select gender");
+                return false;
+            }
+
+            // check box
+            let c1 = document.myform.c1.checked;
+            let c2 = document.myform.c2.checked;
+            if (c1 == false && c2 == false) {
+                alert("select qualification");
+                return false;
+            }
+
+            // Selection
+            let city = document.myform.city.value;
+            if (city == -1) {
+                alert("select city");
+                return false;
+            }
+
+
+            //  number
+            let mno = document.myform.mno.value;
+            if (mno == "") {
+                alert("enter number");
+                return false;
+            } else if (mno < 10) {
+                alert("enter number not more than 10 digit ");
+                return false;
+            }
+        }
+    </script>
+</body>
+
+</html>

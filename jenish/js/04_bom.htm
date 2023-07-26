@@ -1,0 +1,44 @@
+<!-- bom is browser object modal
+like Window object ,
+    history object ,
+    navigatre object ,
+    screen objects -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BoM</title>
+</head>
+
+<body>
+    <button  onclick="wind()">Window</button>
+    <button onclick="Histry()">Histry</button>
+    <button id="scrn" onclick="Scrn()">Scrn</button>
+    <button id="navi" onclick="navi">Navi</button>
+    <script>
+        function wind() {
+            console.log(window.innerHeight);
+        }
+
+        function Histry() {
+            window.history.back();
+            window.history.forward();
+        }
+
+        function Scrn() {
+            console.log("This height is" + " " + window.screen.availHeight);
+        }
+
+        function navi() {
+            console.log(navigator.cookieEnabled);
+            // console.log(navigator.appCodeName);
+
+        }
+    </script>
+</body>
+
+</html>

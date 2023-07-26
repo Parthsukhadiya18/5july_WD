@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        p {
+            /* animation: ; */
+            animation-name: example;
+            animation-duration: 1s;
+            animation-delay: 2s;
+            /* ease ease-in ease-in-out ease-out
+            linear*/
+            animation-timing-function: linear;
+            /* 2 5 infinite */
+            animation-iteration-count: infinite;
+            /* alternate  reverse alternate-reverse normal */
+            animation-direction: normal;
+
+        }
+
+        @keyframes example {
+            from {
+                background-color: red;
+            }
+
+            to {
+                background-color: yellow;
+                width: 200px;
+            }
+
+            /* allo so add in % 0 to 100 
+             @keyframes example {
+            0% {background-color: red;}
+
+           20% {background-color: red;}
+
+           40% {background-color: red;}
+
+           60% {background-color: red;}
+
+            100% {background-color: red;}
+            */
+        }
+    </style>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, mollitia?</p>
+</body>
+
+</html>

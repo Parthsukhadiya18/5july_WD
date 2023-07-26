@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>append() prepend() after() before()</title>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+
+</head>
+
+<body>
+    <h1>append() prepend() after() before()</h1>
+    <button id="app" type="button">Append</button>
+    <button id="pre" type="button">Prepend</button>
+    <div id="hed1">Heloo</div>
+    <button id="aft" type="button">After</button>
+    <button id="bef" type="button">Before</button>
+    <img src="img/coffee1.jpg" id="img1" height="100px" width="100px">
+
+
+    <script>
+        $(document).ready(function () {
+            $("#app").click(function () {
+                $("#hed1").append("<h1>Apprend</h1>");
+            })
+            $("#pre").click(function () {
+                $("#hed1").prepend("<h1>Prepend</h1>");
+            })
+            $("#aft").click(function () {
+                $("#img1").after("<img src='img/coffee1.jpg' id='img1' height='200px' width='200px'>");
+            })
+            $("#bef").click(function () {
+                $("#img1").before("<img src='img/coffee1.jpg' id='img1' height='200px' width='200px'>");
+            })
+        })
+    </script>
+</body>
+
+</html>

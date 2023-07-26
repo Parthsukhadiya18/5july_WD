@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <style>
+        h6 {
+            background-color: rgb(31, 31, 227);
+            height: 200px;
+            width: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- show and hide password -->
+
+
+    <button id="up">slideUp</button>
+    <button id="down">slideDown</button>
+    <button id="upDown">slideToggle</button>
+    <button id="stop">Stop</button>
+
+    <h6 class="para">Lorem ipsum dolor sit amet
+        accusantium eveniet officia magnam consectetur sit voluptatem?</h6>
+
+
+    <form action="https://www.youtube.com/watch?v=jJkky3L1Lmw&list=PLwGdqUZWnOp00IbeN0OtL9dmnasipZ9x8&index=17">
+        <p id="pa1">1</p>
+        <button id="btn" type="submit">Submit</button>
+    </form>
+
+    <script>
+        //    slideup slidedown slidetoggle
+        $("document").ready(function () {
+            $("#up").click(function () {
+                $(".para").slideUp(3000)
+            })
+
+            $("#down").click(function () {
+                $(".para").slideDown(3000)
+            })
+
+            $("#upDown").click(function () {
+                $(".para").slideToggle(3000)
+            })
+            $("#stop").click(function () {
+                $(".para").stop(3000)
+            })
+
+
+        })
+
+    </script>
+</body>
+
+</html>

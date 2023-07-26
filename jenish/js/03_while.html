@@ -1,0 +1,56 @@
+<!-- Here Loop 
+three are type loop
+1)while(){
+}
+2)do{
+}while()
+3)for(){
+}-->
+<!-- Do While Loop 
+same as while Loop
+but one different is first print nad check condition
+if condition wrong then loop is terminet -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While Loop</title>
+</head>
+
+<body>
+    <script>
+        var a = 1;
+        var br = "<br>";
+        while (a < 20) {
+            document.write("hello Alexa!" + br);
+            a++;
+        }
+        var i = 1;
+        do {
+            i++;
+            document.write("hello payal!" + br);
+            console.log("hello Alexa");
+        } while (i <= 10);
+        
+        var i, j;
+        var br = "<br>";
+        // for ( i = 0; i < 5; i++) {
+
+        //     document.write("hello Alexa!"+ br);
+        //     document.write("*" + br);
+        // }
+        for (i = 1; i <= 5; i++) {
+            for (j = 1; j <= i; j++) {
+                document.write(i);
+            }
+
+            document.write(br);
+        }
+    </script>
+</body>
+
+</html>

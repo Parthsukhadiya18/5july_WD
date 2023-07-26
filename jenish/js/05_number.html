@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="">
+        <label for="number1">Number1</label>
+        <input type="number" id="number1" placeholder="enter number" /><br /><br />
+
+        <label for="number2">Number2</label>
+        <input type="number" id="number2" placeholder="enter number" /><br /><br />
+
+        <button type="button" id="btn" onclick="my()">Submit</button>
+        <p id="msg"></p>
+    </form>
+
+    <script>
+
+
+        function my() {
+            let number1 = document.querySelector("#number1").value;
+            let number2 = document.querySelector("#number2").value;
+
+            if (number1 < number2) {
+                // console.log("hello");
+                document.querySelector("#msg").innerHTML = "number2 is mix";
+
+
+            } else if (number2 < number1) {
+                // console.log("no");
+                document.querySelector("#msg").innerHTML = "number1 is mix";
+
+            }
+            else {
+                // console.log("no");
+                document.querySelector("#msg").innerHTML = "both are same";
+
+            }
+
+        }
+    </script>
+</body>
+
+</html>

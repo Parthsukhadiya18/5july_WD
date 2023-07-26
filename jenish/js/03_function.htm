@@ -1,0 +1,64 @@
+<!-- function is block of code
+    function function_name(){
+        block of code
+    }
+    function massege(){
+       console.log("this is alexa");
+    }
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="parth"></p>
+
+    <button onclick="saveme()">Save me</button>
+    <button onclick="console.log(user('bhavesh','audi','q9'))">Save me</button>
+    <button onclick="parth()">Param</button>
+    <p id="p1"></p>
+    <script>
+        function saveme() {
+            alert("hello parth I am alexa");
+            document.write("PARTH PATEL ")
+        }
+        // option
+        function user(name,car,model) {
+            return `This is  ${name} that is my ${car} this is model number ${model}`;
+
+        }
+        // console.log(user("parth"))
+        console.log(user("Jenish"))
+
+        function parth() {
+            alert("Hello Parth");
+            document.querySelector("#parth").innerHTML = "Parth Parth Parth"
+            // alert(a+b)
+            // return 0 
+        }
+         
+        // arrow function 
+        setTimeout(() => {
+            return "hi"
+        }, 5000);
+          
+        // setTimeout(p(),5000)
+       const p = () =>{return 'hi'}
+        console.log(p())
+
+        const p1 = (name) =>{return `thos is ${name}`}
+        console.log(p1('jenish'))
+
+        
+
+</script>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition</title>
+    <style>
+        .tr {
+            background-color: red;
+            height: 100px;
+            width: 100px;
+            transition: 2s all ease;
+        }
+
+        .tr:hover {
+            /* transform: rotate(20deg); 
+        transform: rotateX(50deg);
+        transform: rotateY(180deg);*/
+            transform: rotateZ(360deg);
+        }
+
+        .tr1 {
+            background-color: red;
+            height: 100px;
+            width: 100px;
+            transition: 2s all ease-in;
+        }
+
+        .tr1:hover {
+            /* transform: translateX(120px); */
+            /* transform: translateY(120px); */
+            transform: translate(120px, 120px);
+        }
+
+        .tr2 {
+            background-color: red;
+            height: 100px;
+            width: 100px;
+            transition: 2s all ease-out;
+        }
+
+        .tr2:hover {
+            /* transform: skew(20deg,30deg); */
+            transform: skewX(20deg);
+            /* transform: skewY(30deg); */
+        }
+
+        .tr3 {
+            background-color: red;
+            height: 100px;
+            width: 100px;
+            transition: 2s all ease-in-out;
+        }
+
+        .tr3:hover {
+            /* transform: scale(2,2);
+        transform: scaleX(2); */
+            transform: scaleY(2);
+        }
+
+        .tr4 {
+            background-color: red;
+            height: 100px;
+            width: 100px;
+            transition: 2s all ease;
+        }
+
+        .tr4:hover {
+            /* transform: matrix(scalx,skewX,skewY,scaleY,translateX,translateY); */
+
+            transform: matrix(1, 20, 20, 1, 20, 20);
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="tr"></div> <br><br>
+        <div class="tr1"></div><br><br>
+        <div class="tr2"></div><br><br>
+        <div class="tr3"></div><br><br>
+        <div class="tr4"></div><br><br>
+
+    </div>
+</body>
+
+</html>

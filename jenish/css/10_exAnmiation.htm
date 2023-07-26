@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex animation</title>
+    <style>
+        .main {
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            position: relative;
+            border: 2px solid red;
+            transition: 2s all ease;
+            animation: loaded 2s infinite;
+            margin: 100px;
+        }
+
+        .sub-main {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            border: 2px dotted green;
+            transition: 2s all ease;
+        }
+
+        .sub {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            border: 2px solid rgb(17, 5, 248);
+            transition: 2s all ease;
+        }
+
+        @keyframes loaded {
+            0% {
+                transform: rotate(0deg);
+            }
+
+
+
+            50% {
+                transform: rotate(180deg)
+            }
+
+
+
+            100% {
+                transform: rotate(360deg)
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="sub-main">
+            <div class="sub">
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

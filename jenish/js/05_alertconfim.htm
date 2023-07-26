@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <button type="button" onclick="Alt()">Alert</button>
+
+    <button type="button" onclick="alert('Hello')">Alert</button><br /><br />
+
+    <button type="button" onclick="confirm('Hello')">Confirm</button>
+    <button type="button" onclick="Con()">Confirm</button><br /><br />
+    <P id="p"></P>
+
+    <button type="button" onclick="prompt('Hello')">Prompt</button>
+    <button type="button" onclick="pro()">Prompt1</button>
+    <P id="p1"></P>
+    <script>
+
+
+
+        function Alt() {
+            alert("Heloo User");
+        }
+
+        function Con() {
+            if (confirm("Are u done") == true) {
+                document.querySelector("#p").innerHTML = "Ok"
+            } else {
+                document.querySelector("#p").innerHTML = "No";
+            }
+        }
+
+        function pro() {
+            let Name = prompt("enter your name")
+            if (Name == "") {
+                alert("enter your name");
+            } else {
+                document.getElementById("p1").innerHTML = Name;
+            }
+
+        }
+    </script>
+</body>
+
+</html>

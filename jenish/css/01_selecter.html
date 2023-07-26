@@ -1,0 +1,56 @@
+<!-- selecter in css
+
+class . used 
+id    # used 
+element   p
+group     p,h1,h2   
+universal   *     -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* syntex  
+     selecter {
+      property:value
+      } 
+     */
+    /* class selecter  */
+    .h1{
+      background-color: red;
+    }
+    /* id selecter  */
+    #h1{
+      color: pink;
+    }
+    /* element selecter  */
+    p{
+     background-color: blue;
+    }
+    /* group selecter  */
+       .h1,#h1,p {
+        font-style: italic;
+        font-size: larger;
+      }
+
+      /* universal selecter  */
+      *{
+        box-sizing: border-box;
+      }
+  </style>
+</head>
+<body>
+  <h1 class="h1">Lorem ipsum dolor, sit amet consectetur</h1>
+  <h2  id="h1">Lorem ipsum dolor sit amet.</h2>
+
+  <p>Hello Alexa</p>
+
+
+</body>
+</html>
+
+

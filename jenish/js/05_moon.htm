@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dark-mode {
+            background-color: red
+        }
+    </style>
+</head>
+
+<body>
+    <img src="img/moon.jpg" id="moon" alt="" height="100px" width="100px">
+
+
+    <script>
+        let icon = document.querySelector("#moon");
+        let body = document.querySelector("body");
+
+        icon.addEventListener("click", function () {
+            body.classList.toggle("dark-mode")
+            if (body.classList.contains("dark-mode") == true) {
+                icon.src = "img/sun.jpg";
+            } else {
+                icon.src = "img/moon.jpg";
+            }
+
+        })
+
+
+
+    </script>
+</body>
+
+</html>

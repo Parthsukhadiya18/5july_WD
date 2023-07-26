@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ancestors * {
+            display: block;
+            border: 2px solid lightgrey;
+            color: lightgrey;
+            padding: 5px;
+            margin: 15px;
+        }
+
+        .ul {
+            width: 500px;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".btn1").click(function () {
+                $("div").children().css({ "color": "red", "border": "2px solid red" });
+            })
+            $(".btn2").click(function () {
+                $("div").children(".ul").css({ "color": "blue", "border": "2px solid blue" });
+            })
+            $(".btn3").click(function () {
+                $("div").find("ul").css({ "color": "yellow", "border": "2px solid yellow" });
+            })
+        });
+    </script>
+</head>
+
+<body>
+    <button type="button" class="btn1">Childern</button>
+    <button type="button" class="btn2">Children</button>
+    <button type="button" class="btn3">Find</button>
+
+    <div class="ancestors">
+        <div class="ul">div (great-grandparent)
+            <ul>ul (grandparent)
+                <li>li (direct parent)
+                    <span>span</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

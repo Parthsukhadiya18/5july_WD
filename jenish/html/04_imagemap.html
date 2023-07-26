@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>image map and maquee</title>
+</head>
+
+<body>
+  <!-- marquee 
+        direction="left" "right" "up" "down"
+        behavior="scroll" "sliding" 
+        scrollamount="1" increase   -->
+  <marquee behavior="scroll" direction="up">Parth</marquee>
+  <marquee behavior="scroll" direction="down">Parth</marquee>
+  <marquee behavior="scroll" direction="left">Parth</marquee>
+  <marquee behavior="scroll" direction="right">Parth</marquee>
+  <marquee behavior="scroll" direction="right" scrollamount="">Parth</marquee>
+
+<!-- image map 
+rect circle polygone
+grap
+rect  x y dirction
+circle x y redius 
+polygone in xy pair
+-->
+  <img src="img/workplace.jpg" alt="" usemap="#parth">
+
+  <map name="parth">
+    <!-- <area shape="rect" coords="46,56,253,176" href="img/cellphone.jpg" alt="Parth"> -->
+    <area shape="rect" coords="293,176,330,246" href="img/cellphone.jpg" alt="Parth">
+    <area shape="circle" coords="340,300,44" href="img/cellphone.jpg" alt="Parth">
+    <area shape="poly" coords="35,41,55,175,154,237,260,77,77,272,253,279" href="img/coffeehouse2.jpg" alt="Parth">
+ </map>
+
+
+
+
+</body>
+
+</html>

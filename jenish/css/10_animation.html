@@ -1,0 +1,60 @@
+<!-- animation is out tag outlook different look -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            /* shot hend  */
+            animation: parth 2s ease infinite alternate forwards;
+            /* animation-name: parth;
+            animation-duration: 1s;
+            animation-timing-function: ease;
+            /* animation-delay: 4s; */
+            animation-fill-mode: forwards;
+            animation-iteration-count: infinite;
+            animation-direction: alternate; */
+
+        }
+
+      @keyframes parth {
+         0%{
+            color: white;
+            background-color:  red;
+         }
+         25%{
+            margin-top: 150px;
+            color: rgb(23, 253, 61);
+            background-color:  rgb(7, 196, 233);
+         }
+         50%{
+            margin-top: 150px;
+            color: rgb(23, 184, 253);
+            background-color:  rgb(0, 255, 47);
+         }
+         75%{
+            margin-top: 150px;
+            color: rgb(253, 23, 203);
+            background-color:  rgb(225, 255, 0);
+         }
+         100%{
+            background-color: blue;
+            color: pink;
+             /* margin-left: 100px; */
+             margin-top: 300px;
+         }
+      }
+    </style>
+</head>
+<body>
+     <div> Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, aut.</div>
+</body>
+</html>

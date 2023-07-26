@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- show and hide password -->
+    <label for="input">password</label>
+    <input type="password" id="input">
+    <button id="show">Show</button>
+
+
+
+    <script>
+        let inputbox = document.querySelector("input");
+        let show = document.querySelector("#show");
+
+
+        show.addEventListener("click", () => {
+            
+            if (inputbox.type === "password") {
+            //  console.log("jenish");
+                inputbox.type = "text";
+                show.textContent = "Hide";
+         
+            } else {
+                inputbox.type = "password";
+                show.textContent = "show";
+         
+            }   
+
+        })
+
+
+
+    </script>
+</body>
+
+</html>

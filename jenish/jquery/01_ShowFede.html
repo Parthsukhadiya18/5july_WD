@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- show and hide password -->
+    <h1 id="up">FadeIn</h1>
+    <h1 id="down">FadeOUT</h1>
+    <h1 id="up-down">FadeToggle</h1>
+    <h4 class="para">Lorem ipsum dolor sit amet adipisicing elit. Ab veniam vo
+        sequuntur nulla!</h4>
+    <p>PLorem ipsum dolor sit amet, consectetur quam adipisci libero mollitia doloribus consequuntur?</p>
+
+
+    <script>
+
+
+        $("document").ready(function () {
+            $("#up").click(function () {
+                $(".para").show(1000);
+            });
+
+            $("#down").click(function () {
+                $(".para").hide();
+            });
+
+            $("#up-down").click(function () {
+                $(".para").toggle();
+            });
+
+            $("#up").click(function () {
+                $(".para").fadeIn(1000);
+            });
+
+            $("#down").click(function () {
+                $(".para").fadeOut();
+            });
+
+            $("#up-down").click(function () {
+                $(".para").fadeToggle();
+            });
+        })
+    </script>
+
+</body>
+
+</html>

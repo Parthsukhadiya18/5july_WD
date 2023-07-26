@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <style>
+        .p1 {
+            color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>addclass removeclass toggleclass</h1>
+    <button type="button" id="add">AddClass</button>
+    <button type="button" id="rem">RemoveClass</button>
+    <button type="button" id="togl">ToggleClass</button>
+
+
+    <p>Hello Parth</p>
+    <script>
+        $(document).ready(function () {
+            $("#add").click(function () {
+                $("p").addClass("p1");
+            })
+            $("#rem").click(function () {
+                $("p").removeClass("p1");
+            })
+            $("#togl").click(function () {
+                $("p").toggleClass("p1");
+            })
+
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .siblings * {
+            display: block;
+            border: 2px solid lightgrey;
+            color: lightgrey;
+            padding: 5px;
+            margin: 15px;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".btn").click(function () {
+                $("h2").siblings().css({ "color": "red", "border": "2px solid red" });
+            })
+
+
+            $(".btn1").click(function () {
+                $("h2").next().css({ "color": "blue", "border": "2px solid blue" });
+            })
+            $(".btn2").click(function () {
+                $("h2").nextAll().css({ "color": "blue", "border": "2px solid blue" });
+            })
+            $(".btn3").click(function () {
+                $("h2").nextUntil().css({ "color": "blue", "border": "2px solid blue" });
+            })
+
+
+
+            $(".btn4").click(function () {
+                $("h2").prev().css({ "color": "blue", "border": "2px solid blue" });
+            })
+            $(".btn5").click(function () {
+                $("h2").prevAll().css({ "color": "blue", "border": "2px solid blue" });
+            })
+            $(".btn6").click(function () {
+                $("h2").prevUntil().css({ "color": "blue", "border": "2px solid blue" });
+            })
+        });
+    </script>
+</head>
+
+<body>
+    <button type="button" class="btn">Sibling</button>
+    <button type="button" class="btn1">Next</button>
+    <button type="button" class="btn2">Nextall</button>
+    <button type="button" class="btn3">NextUnstill</button>
+
+    <button type="button" class="btn4">Previes</button>
+    <button type="button" class="btn5">Previesall</button>
+    <button type="button" class="btn6">PreviesUnstill</button>
+
+    <div class="siblings">
+        <div>div (parent)
+            <p>p</p>
+            <span>span</span>
+            <h2>h2</h2>
+            <h3>h3</h3>
+            <p>p</p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

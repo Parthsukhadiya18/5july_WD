@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".btn1").click(function () {
+                $("div").first().css("background-color", "yellow");
+            })
+            $(".btn2").click(function () {
+                $("div").last().css("background-color", "yellow");
+            })
+            $(".btn3").click(function () {
+                $("p").eq(1).css("background-color", "red");
+            })
+            $(".btn4").click(function () {
+                $("div").filter(".intro").css("background-color", "blue");
+            })
+            $(".btn5").click(function () {
+                $("div").not(".intro").css("background-color", "green");
+            })
+        });
+    </script>
+    <style>
+        div {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <button type="button" class="btn1">First</button>
+    <button type="button" class="btn2">Last</button>
+    <button type="button" class="btn3">EQ</button>
+    <button type="button" class="btn4">Filter</button>
+    <button type="button" class="btn">Not</button>
+
+    <h1>Welcome to My Homepage</h1>
+
+    <p>This is a paragraph.</p>
+
+    <div>
+        <p>A paragraph in a div.</p>
+        <p>Another paragraph in a div.</p>
+    </div>
+    <br>
+
+    <div class="intro">
+        <p>A paragraph in another div.</p>
+        <p>Another paragraph in another div.</p>
+    </div>
+    <br>
+
+    <div>
+        <p>A paragraph in another div.</p>
+        <p>Another paragraph in another div.</p>
+    </div>
+    <br>
+
+    <div>
+        <p>A paragraph in another div.</p>
+        <p>Another paragraph in another div.</p>
+    </div>
+
+</body>
+
+</html>

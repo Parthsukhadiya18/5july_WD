@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        .rel {
+            position: relative;
+            border: 2px solid black;
+        }
+
+        .statik {
+            position: static;
+            border: 2px solid rgb(225, 27, 27);
+        }
+
+        .absolutive {
+            position: absolute;
+            border: 4px solid rgb(58, 60, 150);
+            /* top: 10px;
+            left: 10px; */
+        }
+
+        .fixed {
+            position: fixed;
+
+            border: 4px solid rgb(58, 150, 60);
+            top: 200px;
+            left: 100px;
+        }
+
+        .sticky {
+            position: sticky;
+
+            border: 4px solid rgb(58, 128, 150);
+            top: 10px;
+            left: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- position relative
+                   absolutive
+                    fixed
+                     static
+                      sticky -->
+    <div class="rel">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex adipisci dolore excepturi reiciendis
+        doloremque libero culpa! Corrupti maxime nemo, voluptates eos odio incidunt perspiciatis deleniti repellat
+        sapiente nobis, soluta earum!</div>
+
+    <div class="sticky">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex adipisci dolore excepturi
+        reiciendis doloremque
+        libero culpa! Corrupti maxime nemo, voluptates eos odio incidunt perspiciatis deleniti repellat sapiente nobis,
+        soluta earum!</div>
+
+    <div class="statik">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex adipisci dolore excepturi
+        reiciendis doloremque
+        libero culpa! Corrupti maxime nemo, voluptates eos odio incidunt perspiciatis deleniti repellat sapiente nobis,
+        soluta earum!</div>
+    <div class="absolutive">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex adipisci dolore excepturi
+        reiciendis doloremque
+        libero culpa! Corrupti maxime nemo, voluptates eos odio incidunt perspiciatis deleniti repellat sapiente nobis,
+        soluta earum!</div>
+    <div class="fixed">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex adipisci dolore excepturi reiciendis
+        doloremque
+        libero culpa! Corrupti maxime nemo, voluptates eos odio incidunt perspiciatis deleniti repellat sapiente nobis,
+        soluta earum!</div>
+
+</body>
+
+</html>

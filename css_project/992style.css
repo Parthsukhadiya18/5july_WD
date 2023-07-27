@@ -305,5 +305,43 @@ margin-top: 20px;
    
 
 }
+/* section5  */
+.section5 .Ready {
+    position: relative;
+  }
+  
+  .section5 .Ready .img1 img {
+    filter: brightness(80%);
+    height: 300px;
+    width: 100%;
+  }
+  .section5 .text {
+    position: absolute;
+    top: 80px;
+    left: 0px;
+    text-align: center;
+    color: whitesmoke;
+  }
+  .section5 .text h1 {
+    font-size: 30px;
+    font-weight: 600;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .section5 .text p {
+    margin: 30px 80px;
+    font-size: 17px;
+  line-height: 0px;
+
+  }
+  
+  .section5 .text button {
+      padding: 8px 15px;
+      font-size: 14px;
+      /* background-color: transparent; */
+      background-color: rgb(100, 73, 11);
+      color: wheat;
+      border: none;
+    }
 
 }

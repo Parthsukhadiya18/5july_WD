@@ -185,7 +185,7 @@ margin-bottom: 20px;
 }
 .section4 .lower .main .left {
  
-  width: 100%;
+  width: 92%;
   margin:20px 20px 20px 50px;
 
 }
@@ -205,8 +205,8 @@ margin-bottom: 20px;
 
 .section4 .lower .main .right {
  
-  width: 100%;
-  margin:20px 20px 20px 50px;
+  width: 92%;
+  margin:20px 50px 20px 50px;
 
 }
 .section4 .lower .left  .text,.section4 .lower .right  .text{
@@ -237,4 +237,43 @@ margin-bottom: 20px;
 .section4 .lower .left  .text .carl p,.section4 .lower .right  .text .carl p{
   font-size: 15px;
 }
+/* section5  */
+
+.section5 .Ready {
+  position: relative;
+margin: 0px 0px 0px 50px;
+}
+
+.section5 .Ready .img1 img {
+  filter: brightness(80%);
+  height: 300px;
+  width: 100%;
+}
+.section5 .text {
+  position: absolute;
+  top: 40px;
+  left: 0px;
+  text-align: center;
+  color: whitesmoke;
+}
+.section5 .text h1 {
+  font-size: 30px;
+  font-weight: 600;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.section5 .text p {
+  margin: 30px 50px;
+  font-size: 17px;
+  line-height: 28px;
+}
+
+.section5 .text button {
+    padding: 8px 15px;
+    font-size: 14px;
+    /* background-color: transparent; */
+    background-color: rgb(100, 73, 11);
+    color: wheat;
+    border: none;
+  }
 }

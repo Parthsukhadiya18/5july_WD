@@ -4,73 +4,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MY App</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
         <style>
             .img1{
-                position: relative;
-                filter: brightness(50%);
-              
-            }
-            .parth{
-                position: absolute;
-                top: 30%;
-                left: 13%;
-                text-align: center;
+                height: 100vh;
+                width: 100%;
             }
         </style>
 </head>
 
 <body>
-    <header>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-auto  col-sm-12 col-md-3 col-lg-4">
-                    <h1 class="mt-2">Commute</h1>
-                </div>
-                <div class="col-auto d-none d-sm-block col-sm-12 col-md-9 col-lg-8">
-                    <ul class="list-unstyled d-flex mt-lg-4 mt-md-4 mt-sm-0 ">
-                        <li class=""><a href="" class="text-decoration-none mx-3 text-danger">Home</a></li>
-                        <li><a href="" class="text-decoration-none mx-3">About</a></li>
-                        <li><a href="" class="text-decoration-none mx-3">Services</a></li>
-                        <li><a href="" class="text-decoration-none mx-3">Gallery</a></li>
-                        <li><a href="" class="text-decoration-none mx-3">Contact/</a></li>
-                        <li class="text-decoration-none mx-3"><i class="fa-solid fa-phone" style="color: #f8d112;"></i>
-                            +757 4071 908</li>
-                    </ul>
-                </div>
+    <div class="container-fluid">
+        <div class="row position-relative">
+            <div class="col-sm-12 col-auto ">
+                <img src="https://p.w3layouts.com/demos_new/template_demo/05-06-2019/commute_demo_Free/1199547472/web/images/banner1.jpg"
+                    alt="" class="img-fluid img1" style="filter: brightness(65%);  width: 100%;">
             </div>
-        </div>
-    </header>
-    <section>
-        <div class="section1">
-            <div class="container-fluid">
-                <div class="row ">
-                    <div class="col-12 img gx-0">
-                         <div class="img1 ">
-                        <img src="https://p.w3layouts.com/demos_new/template_demo/05-06-2019/commute_demo_Free/1199547472/web/images/banner1.jpg" alt="" class="w-100 ">
-                    </div>
-                  
-                    <div class="parth text-center text-light " >
-                        <h1 class="display-3 fw-semibold ">TRIP NOW EXCEPTIONAL
-                            ADVENTURE</h1>
-                            <p class="h5 mt-3">Vestibulum Consequat. Curabitur Mauris Justo</p>
-                            <button class="btn btn-outline-dark mt-5 btn-lg px-3 py-2">ReadMore</button>
+            <div class="col-sm-12 col-auto position-absolute top-0">
+                <div class="row">
+                    <div class="col-lg-4 col-md-3 col-sm-12 col-auto text-light fw-bold fs-1"><span href="" class="m-3 ms-5 my-sm-0 d-flex ">Commute</span></div>
+
+                    <div class="col-lg-8 col-md-9 col-sm-12 col-auto">
+                        <ul class="list-unstyled d-flex justify-content-end justify-content-sm-start  m-3  px-sm-0 my-sm-0 ">
+                            <li class="m-3 "><a href="" class="text-decoration-none text-light fw-bold ">Home</a></li>
+                            <li class="m-3"><a href="" class="text-decoration-none text-light fw-bold ">About</a></li>
+                            <li class="m-3"><a href="" class="text-decoration-none text-light fw-bold ">Servies</a>
+                            </li>
+                            <li class="m-3"><a href="" class="text-decoration-none text-light fw-bold ">Gallry</a></li>
+                            <li class="m-3  mx-sm-2"><a href="" class="text-decoration-none text-light fw-bold ">Contact</a>
+                            </li>
+                            <li class="m-3 mx-sm-0 text-light"><i class="fa-solid fa-phone" style="color: #fff705;"></i>+7574071908</li>
+                        </ul>
                     </div>
                 </div>
-                </div>
+            </div>
+            <div class="col-12 position-absolute top-50 start-0 text-light text-center ">
+                  <h1 class=" display-md-4 fw-bold my-sm-0 display-sm-6">TRIP NOW EXCEPTIONAL
+                    ADVENTURE</h1>
+                    <p class="fs-4 py-md-3 py-sm-0">Vestibulum Consequat. Curabitur Mauris Justo</p>
+                    <button class="btn btn-outline-light btn-lg my-md-3 my-sm-0">ReadMore</button>
             </div>
         </div>
-    </section>
-
-
+    </div>
 </body>
 
 </html>

@@ -16,11 +16,16 @@
     <!-- inline js  -->
     <button onclick="alert('parth')">Save</button>
    <p id="parth">parth</p>
+   <p class="parth">parth</p>
    <p id="h1">H1</p>
+   <h6>parth</h6>
    <script>
     document.getElementById('parth').innerHTML = '<strong>hello</strong>';
     // document.getElementById('parth').innerText = '<strong>hello</strong>';
-    document.getElementById('parth').innerText = 'hello';
+    // document.getElementById('parth').innerText = 'hello';
+    // document.querySelector('#parth').innerText = 'phello';
+    document.querySelector('.parth').innerText = 'phello  hello';
+    document.querySelector('h6').innerText = 'Shello  hello';
   
 </script>
 <script src="p.js"></script>

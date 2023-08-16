@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <input type="password" id="input">
+    <button id="show">Show</button>
+    <button id="hide">Hide</button>
+    <button id="toggle">show</button>
+
+
+    <script>
+        $(document).ready(function() {
+           $('#show').click(function() {
+             $('#input').attr('type','text');
+           }) 
+           $('#hide').click(function() {
+             $('#input').attr('type','password');
+           }) 
+
+           $('#toggle').click(function() {
+                if($("#input").attr('type')==='password'){
+                    $('#input').attr('type','text');
+                    $("#toggle").text("Hide")
+                }else{
+                    $('#input').attr('type','password'); 
+                    $("#toggle").text("Show")
+                }
+
+             
+           }) 
+        })
+    </script>
+</body>
+</html>

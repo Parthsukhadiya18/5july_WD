@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <button id="slidup">SlideUp</button>
+    <button id="sliddown">SlideDown</button>
+    <button id="SlideToggle">SlideToggle</button>
+
+
+    <p id="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto repellendus sequi, necessitatibus
+        iste unde eum molestiae beatae harum reiciendis, blanditiis sit doloribus quod obcaecati animi, adipisci
+        deleniti suscipit minima corrupti.</p>
+    <script>
+        $(document).ready(function () {
+            $("#slidup").click(function () {
+                $("#para").slideUp(1000);
+            })
+            $("#sliddown").click(function () {
+                $("#para").slideDown(3000);
+            })
+            // $("#SlideToggle").click(function () {
+            //     $("#para").slideToggle(3000);
+
+            // })
+            $("#para").hover(function () {
+                $("#para").slideToggle(3000);
+
+            })
+
+        })
+    </script>
+</body>
+
+</html>

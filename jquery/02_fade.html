@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <button id="fadeout">fadeOut</button>
+    <button id="fadeIn">fadeIn</button>
+    <button id="fadeToggle">fadeToggle</button>
+    <button id="fadeTo">fadeTo</button>
+
+
+    <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, tempora?</p>
+
+
+    <script>
+        $(document).ready(function () {
+            $("#fadeout").click(function () {
+
+                $("#para").fadeOut(5000);
+            })
+            $("#fadeIn").click(function () {
+
+                $("#para").fadeIn();
+            })
+            $("#fadeToggle").click(function () {
+
+                $("#para").fadeToggle();
+            })
+            $("#fadeTo").click(function () {
+
+                $("#para").fadeTo(0,.5);
+            })
+        })
+    </script>
+</body>
+
+</html>

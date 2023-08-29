@@ -13,11 +13,13 @@
     <button id="slidup">SlideUp</button>
     <button id="sliddown">SlideDown</button>
     <button id="SlideToggle">SlideToggle</button>
+    <button id="stop">stop</button>
+
 
 
     <p id="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto repellendus sequi, necessitatibus
         iste unde eum molestiae beatae harum reiciendis, blanditiis sit doloribus quod obcaecati animi, adipisci
-        deleniti suscipit minima corrupti.</p>
+        deleniti suscipit minima corrupti. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero eos enim illo facere, aperiam, laudantium placeat ad, neque quos cumque tempore atque culpa est at maiores voluptate consequuntur molestias aut nulla. Nemo minima aperiam doloremque, inventore assumenda enim deleniti consectetur odit atque aliquid expedita, optio repellendus! Reiciendis incidunt non doloremque?</p>
     <script>
         $(document).ready(function () {
             $("#slidup").click(function () {
@@ -26,12 +28,23 @@
             $("#sliddown").click(function () {
                 $("#para").slideDown(3000);
             })
-            // $("#SlideToggle").click(function () {
-            //     $("#para").slideToggle(3000);
+            $("#SlideToggle").click(function () {
+                $("#para").slideToggle("slow",function() {
+                    alert("hello iiiiii"); 
+                });
+                
+                // confirm("hello");
+                // prompt("yes");
 
-            // })
-            $("#para").hover(function () {
+
+            })
+            $("#para").click(function () {
                 $("#para").slideToggle(3000);
+
+            })
+
+            $("#stop").click(function () {
+                $("#para").stop();
 
             })
 

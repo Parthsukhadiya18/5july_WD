@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <button onclick="console.log(add(2,3))">Add</button>
+    <button onclick="sum(2,3)">Sum</button>
+    <button onclick="sum(5,3)">Sum</button>
+    <button onclick="triple(5,3,4)">triple</button>
+    <button onclick="table(5)">triple</button> -->
+    <input type="number" id="num">
+    <button id="table">triple</button>
+    <p id="p1"></p>
+    <script>
+         let table = document.querySelector("#table");
+         let num = document.querySelector("#num");
+         let p1 = document.querySelector("#p1");
+         table.addEventListener("click", function(){
+            // console.log(parseFloat(num.value));
+            let sum = Number(num.value);
+            for (let i = 1; i <=10; i++) {
+                document.write(sum + "*"+i+"="+sum*i+"<br>");
+                // p1.textContent= `${sum} + "*"+ ${i} +"="+ ${sum*i}+"\n"`;
+                  
+            }
+          
+          
+         })
+        //  function table(x){
+        //     for (let i = 1; i <=10; i++) {
+        //               let z=x*i;
+        //             // console.log( x +"*"+ i + "=" + z); 
+        //             document.writeln( x +"*"+ i + "=" + z); 
+                
+        //     }
+        // }
+        // declaretion function 
+        // function add(){}
+        // function add(x,y){
+        //    return x+y;
+        // }
+        // function sum(x,y){
+        //     z=x+y;
+        //     console.log(z);
+        //    return z;
+        // }
+        // function triple(x,y,z){
+        //     z=x+y+z;
+        //     console.log(z);
+        //    return z;
+        // }
+     
+        //  console.log(add(1,2)); 
+        //  document.write(add(1,2))
+        //  document.writeln(add(3,2))
+        //  document.write(add(5,2))
+        //  document.writeln(add(3,6))
+
+    </script>
+</body>
+</html>
